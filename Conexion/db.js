@@ -1,4 +1,4 @@
-const mongoDb = require('mongoDb');
+/*const mongoDb = require('mongoDb');
 const MongoClient = mongoDb.MongoClient;
 
 const dbConnection = 'mongodb+srv://mongonodejs:mongonodejs@clusternodejs.knwq8.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
@@ -15,4 +15,4 @@ function initialize(successCallBack, failureCallBack){
             console.log('[MongoDb] Error'+err);
         }
     });
-}
+}*/

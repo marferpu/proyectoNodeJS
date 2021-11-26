@@ -1,4 +1,4 @@
-const express = require("express");
+/*const express = require("express");
 const server = express();
 
 const empleado={
@@ -54,7 +54,7 @@ server.post("/", function(request, response){
 
 });
 
-/*/Actualizar informacion PUT
+Actualizar informacion PUT
 server.put("/", function(request, response){
     response.send("Servicio GET raiz");
 
@@ -68,8 +68,8 @@ server.delete("/", function(request, response){
 
 
 
-//-------------*/
+//-------------
 
 server.listen(4000,()=>{
     console.log("Hola Mundo", 4000);
-});
+}); */
