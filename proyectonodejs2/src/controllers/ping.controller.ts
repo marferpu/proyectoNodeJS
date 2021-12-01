@@ -34,9 +34,10 @@ const PING_RESPONSE: ResponseObject = {
   },
 };
 
-/**
- * A simple controller to bounce back http requests
- */
+import {authenticate} from '@loopback/authentication';
+// ------------------------------------
+@authenticate('jwt') // <---- Apply the @authenticate decorator at the class level
+
 export class PingController {
   constructor(@inject(RestBindings.Http.REQUEST) private req: Request) {}
 
