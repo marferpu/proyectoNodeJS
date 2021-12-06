@@ -20,6 +20,8 @@ import {
 import {EmpleadosModel} from '../models';
 import {EmpleadosModelRepository} from '../repositories';
 import {authenticate} from '@loopback/authentication';
+//import {NotificarProvider} from '../services';
+
 // ------------------------------------
 @authenticate('jwt') // <---- Apply the @authenticate decorator at the class level
 
@@ -27,6 +29,9 @@ export class EmpleadoControllerController {
   constructor(
     @repository(EmpleadosModelRepository)
     public empleadosModelRepository : EmpleadosModelRepository,
+    //@service(NotificarProvider)
+   // @inject('services.notificar')
+    //protected notificar:NotificarProvider,
   ) {}
 
   @post('/integrantes')
@@ -49,6 +54,7 @@ export class EmpleadoControllerController {
   ): Promise<EmpleadosModel> {
     const listaTempo = this.empleadosModelRepository.create(empleadosModel);
     return listaTempo;
+    //this.notificar.value();
   }
 
   @get('/integrantes/count')

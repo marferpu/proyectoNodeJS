@@ -10,7 +10,11 @@ import {
   FindRoute,
   InvokeMethod,
   ParseParams,
-  Reject, RequestContext, Send, SequenceActions, SequenceHandler
+  Reject,
+  RequestContext,
+  Send,
+  SequenceActions,
+  SequenceHandler
 } from '@loopback/rest';
 
 
